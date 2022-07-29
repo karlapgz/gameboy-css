@@ -1,0 +1,188 @@
+:root {
+    --purple: #BE8BF4;
+    --purple-dark: #927FFD;
+    --pink: #FB7AC2;
+    --green: #6ED3B7;
+    --yellow: #F1FF69;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(var(--purple-dark), var(--pink));
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.gameboy__body {
+    width: 330px;
+    height: 500px;
+    background-color: var(--green);
+    border-radius: 15px 15px 70px 15px;
+    border: 2px solid #000;
+}
+
+.top {
+    width: 100%;
+    height: 1.5rem;
+    display: flex;
+}
+
+.top-rf {
+    width: 15%;
+    height: 100%;
+    background-color: var(--purple);
+}
+
+.top_left {
+    border-radius: 13px 0 0 0;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.top_right {
+    border-radius: 0 13px 0 0;
+    border-bottom: 2px solid #000;
+    border-left: 2px solid #000;
+}
+
+.top_middle {
+    width: 70%;
+    height: 100%;
+    background-color: var(--purple-dark);
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #000;
+}
+
+.top_middle_hole {
+    width: 50px;
+    height: 10px;
+    background-color: var(--yellow);
+    border-radius: 5px;
+    margin-left: 1rem;
+    border: 2px solid #000;
+}
+
+.gameboy__screen {
+    width: 280px;
+    height: 200px;
+    background-color: var(--pink);
+    margin: 1rem auto;
+    border-radius: 7px 7px 25px 7px;
+    border: 2px solid #000;
+}
+
+.lines {
+    width: 90%;
+    height: 3px;
+    background-color: var(--purple-dark);
+    margin: 0.5rem 1rem 0;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.screen {
+    width: 200px;
+    height: 150px;
+    background-color: var(--purple);
+    margin: 0.7rem auto;
+    border: 2px solid #000;
+}
+
+.title {
+    display: flex;
+    margin-left: 1.5rem;
+}
+
+.title p {
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-right: 0.3rem;
+}
+
+.title span {
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.buttons__middle {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.button__cross {
+    width: 90px;
+    height: 90px;
+    background-color: var(--yellow);
+    clip-path: polygon(10% 30%, 35% 30%, 35% 0, 65% 0%, 65% 30%, 90% 30%, 90% 60%, 65% 60%, 65% 89%, 35% 89%, 35% 60%, 10% 60%);
+}
+
+.button_p {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.button_pair {
+    transform: rotate(25deg)
+}
+
+.b1 {
+    background-color: var(--purple);
+    margin-left: 2rem;
+    border: 2px solid #000;
+}
+
+.b2 {
+    background-color: var(--pink);
+    border: 2px solid #000;
+}
+
+.buttons__bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.buttons__bottom p {
+    display: inline-block;
+    border-top: 10px solid var(--pink);
+    width: 35px;
+    transform: rotate(-45deg);
+    font-size: 0.8rem;
+    margin-right: 1rem;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+}
+
+.lines-bottom {
+    display: flex;
+    justify-content: flex-end;
+    transform: rotate(-40deg);
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+
+.line {
+    width: 5px;
+    height: 40px;
+    background-color: var(--purple);
+    margin-left: 0.6rem;
+}
